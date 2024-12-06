@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+  .resume-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+  }
+
+  .resume-btn:hover {
+    background-color: #0056b3;
+  }
+</style>
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/photo.jpg" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Rayhon Samo</h1>
+
+          <p class="title">Web developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:rayhonsam10@gmail.com" class="contact-link">rayhonsam10@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:9345511233" class="contact-link">9345511233</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">May 19, 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ponneri, Chennai, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Rayhonsamo2004" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am currently studying at Thiagarajar College of Engineering, where I've honed my skills in web development and
+            mobile
+            app development with cloud based platform like AWS. I've worked extensively on projects involving React, Flask, and Android development,  with backend as firebase,MySQL,AWS blending my
+            technical expertise with my passion for creating intuitive and user-friendly designs.
+          </p>
+          
+          <p>
+            As a Creative Director and UI/UX Designer based in Ponneri Chennai, I specialize in transforming complex problems
+            into
+            simple, beautiful, and functional solutions. My work spans web development and print media, where I ensure that every
+            design is not only visually appealing but also aligns with the brand's identity and message. I've had the privilege of
+            designing for some of the most well-known brands, always striving to make products that are both eye-catching and easy
+            to use.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  I am currently studying at Thiagarajar College of Engineering, where I've honed my skills in web development and
+                  mobile
+                  app development. I've worked extensively on projects involving React, Flask, and Android development, blending my
+                  technical expertise with my passion for creating intuitive and user-friendly designs.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">R.M.K MATRIC HR SEC SCHOOL</h4>
+
+              <span>2013</span>
+
+              <p class="timeline-text">
+                 Primary Education
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">R.M.K MATRIC HR SEC SCHOOL</h4>
+
+              <span>2017</span>
+
+              <p class="timeline-text">
+                MIDDLE SCHOOL
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">R.M.K MATRIC HR SEC SCHOOL</h4>
+
+              <span>2019</span>
+
+              <p class="timeline-text">
+                 SECONDARY EDUCATION
+              </p>
+
+            </li>
+<li class="timeline-item">
+
+  <h4 class="h4 timeline-item-title">R.M.K MATRIC HR SEC SCHOOL</h4>
+
+  <span>2021</span>
+
+  <p class="timeline-text">
+    HIGHER SECONDARY EDUCATION
+  </p>
+
+</li>
+
+    </li>
+    <li class="timeline-item">
+    
+      <h4 class="h4 timeline-item-title">Thiagarajar College of Engineering,Madurai</h4>
+    
+      <span>2021</span>
+    
+      <p class="timeline-text">
+        JOINED TCE
+      </p>
+    
+    </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">WAIOZ CONSULATNCY SERVICES - FULL STACK DEVELOPMENT</h4>
+
+              <span>2023</span>
+
+              <p class="timeline-text">
+                    The project addresses the need for a more efficient way to manage and track departmental events and placement schedules.
+                    It aims to solve problems related to communication gaps and the mismanagement of events, which are common in many
+                    educational institutions.
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Full Stack Development</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Problem Solving</h5>
+                <data value="90">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">AWS</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+<a href="https://docs.google.com/document/d/1ZuxKVCg3NFRi4Vj-Hh8tfuwwmtn3yqlK/edit#heading=h.jjr1dm242uuq" target="new_blank">
+  <button class="resume-btn" data-resume-btn>View Resume</button>
+</a>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+        <ul class="project-list">
+        
+          <li class="project-item  active" data-filter-item data-category="web development">
+            <a href="https://matrimony-system.onrender.com/" target="new_blank">
+        
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+        
+                <img src="assets\images\Matrimony_page.png" style="height: 200px;" alt="finance" loading="lazy">
+              </figure>
+        
+              <h3 class="project-title">Matrimony Management System</h3>
+        
+              <p class="project-category">Web development</p>
+        
+            </a>
+          </li>
+        
+          <li class="project-item  active" data-filter-item data-category="web development">
+            <a href="https://it-academic-calendar.web.app/" target="new_blank">
+        
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+        
+                <img src="assets\images\Academic_calendar.png" style="height:200px" alt="orizon" loading="lazy">
+              </figure>
+        
+              <h3 class="project-title">Academic Calender</h3>
+        
+              <p class="project-category">Web development</p>
+        
+            </a>
+          </li>
+        
+          <li class="project-item  active" data-filter-item data-category="applications">
+            <a href="https://github.com/Rayhonsamo2004/smart_survillance_sytem">
+        
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+        
+                <img src="assets\images\System_workflow.png" style="height:200px;" alt="finance" loading="lazy">
+              </figure>
+        
+              <h3 class="project-title">Smart Survillance System</h3>
+        
+              <p class="project-category">Web development</p>
+        
+            </a>
+          </li>
+
+
+              <li class="project-item  active" data-filter-item data-category="web development">
+                <a href="https://auditorium-9973a.web.app/" target="new_blank">
+              
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+              
+                    <img src="assets\images\Auditorium_request_app.png" style="height: 200px;" alt="finance" loading="lazy">
+                  </figure>
+              
+                  <h3 class="project-title">Auditorium Request Application</h3>
+              
+                  <p class="project-category">Serverless Application</p>
+              
+                </a>
+            </li>
+  
+        </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Certificates</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/MADURAI HACKATHON.png" alt="Project Presentation" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Distributed System</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 23, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">HACKATHON in 2023</h3>
+
+                  <p class="blog-text">
+                    I chose this project because public safety is a critical concern, and leveraging technology to detect anomalies in real
+                    time can significantly enhance security. By using Raspberry Pi for local processing with CNN, the system provides
+                    fast, cost-effective surveillance with reduced latency
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/WAIOZ .png" alt="Full stack development" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">WEB DESIGN</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">MAR 23, 2023</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Full Stack Intern</h3>
+
+                  <p class="blog-text">
+                    The project addresses the need for a more efficient way to manage and track departmental events and placement schedules.
+                    It aims to solve problems related to communication gaps and the mismanagement of events, which are common in many
+                    educational institutions.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/AWS_ICT ACADEMY_page-0001.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud Services</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">AWS CLOUD ARCHITECT</h3>
+
+                  <p class="blog-text">
+                    Exploring all AWS SERVICES and interacting with web application.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/NPTEL C.png" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Programming in C</h3>
+
+                  <p class="blog-text">
+                     Completed Problem Solving through Programming in C conducted by nptel Kharagpur.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/NPTEL C++.png" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Programming</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Programming in C++</h3>
+
+                  <p class="blog-text">
+                    Completed Problem Solving through Programming in Modern C++ conducted by nptel Kharagpur.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/Project Presentation - CSE_page-0001.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Project Presentation</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Feb 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Project Presentation in PSG TECH Coimbatore
+                  </h3>
+
+                  <p class="blog-text">
+                     Participated in Project Presentation with Intelligent surveillance System as Problem Statment.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+<a href="https://github.com/Rayhonsamo2004/Certificates"
+  target="new_blank">
+  <button class="resume-btn" data-resume-btn>View More Certificates</button>
+</a>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
